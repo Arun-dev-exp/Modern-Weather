@@ -89,7 +89,7 @@ const Weather = () => {
         </div>
       </div>
       <div className="Advice">
-        <p>Advice: {weather.temperature>20?"It's a hot day, drink water and stay hydrated":weather.temperature<10?"It's a cold day, wear a jacket":''}</p>
+        <p>Advice: {weather.temperature > 20 ? "It's a hot day, drink water and stay hydrated" : weather.temperature <= 10 ? "It's a cold day, wear a jacket" : ''}</p>
       </div>
         
         </>:<>
