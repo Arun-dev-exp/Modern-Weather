@@ -127,10 +127,6 @@
         width: 40px;
     }
 
-    .Advice {
-        font-size: 18px;
-        padding: 8px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -169,8 +165,4 @@
         width: 30px;
     }
 
-    .Advice {
-        font-size: 16px;
-        padding: 6px;
-    }
 }
