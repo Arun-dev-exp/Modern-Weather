@@ -1,4 +1,4 @@
-.weather{
+.weather {
     place-self: center;
     padding: 40px;
     border-radius: 10px;
@@ -7,47 +7,52 @@
     flex-direction: column;
     align-items: center;
 }
-.search-box{
+
+.search-box {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.search-box input{
+
+.search-box input {
     padding-left: 25px;
     border-radius: 40px;
     border: none;
     outline: none;
-    background-color:#ebfffb;
-    color:black;
-    height:50px;
+    background-color: #ebfffb;
+    color: black;
+    height: 50px;
     font-size: 18px;
     font-weight: 500;
 }
-.search-box img{
+
+.search-box img {
     width: 50px;
-    padding:15px;
+    padding: 15px;
     border-radius: 50%;
     background-color: #ebfffb;
     cursor: pointer;
-
 }
-.location-box{
+
+.location-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-.temperature{
+
+.temperature {
     font-size: 60px;
     font-weight: 500;
     color: #000000;
-
 }
-.location{
+
+.location {
     font-size: 30px;
     font-weight: 300;
 }
-.weather-data{
+
+.weather-data {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -55,22 +60,25 @@
     font-weight: 500;
     font-size: 20px;
 }
-.weather-data col{
-    display : flex;
+
+.weather-data .col {
+    display: flex;
     align-items: flex-start;
     gap: 12px;
     font-size: 12px;
 }
-.weather-data .col span{
+
+.weather-data .col span {
     display: block;
     font-size: 16px;
 }
-.weather-data .col img{
+
+.weather-data .col img {
     width: 50px;
     margin-top: 10px;
-
 }
-.Advice{
+
+.Advice {
     font-size: 20px;
     font-weight: 500;
     margin-top: 20px;
@@ -81,3 +89,87 @@
     border: 1.5px solid white;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .weather {
+        padding: 20px;
+    }
+
+    .search-box input {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .search-box img {
+        width: 40px;
+        padding: 10px;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .location {
+        font-size: 25px;
+    }
+
+    .weather-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-data .col {
+        font-size: 14px;
+    }
+
+    .weather-data .col img {
+        width: 40px;
+    }
+
+    .Advice {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather {
+        padding: 10px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .search-box img {
+        width: 30px;
+        padding: 8px;
+    }
+
+    .temperature {
+        font-size: 40px;
+    }
+
+    .location {
+        font-size: 20px;
+    }
+
+    .weather-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-data .col {
+        font-size: 12px;
+    }
+
+    .weather-data .col img {
+        width: 30px;
+    }
+
+    .Advice {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
