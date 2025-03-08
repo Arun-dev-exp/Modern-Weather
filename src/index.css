@@ -11,3 +11,11 @@
   height:100vh;
   background-color:#c9c7c7;
 }
+
+@media (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
