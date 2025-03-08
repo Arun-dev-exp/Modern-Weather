@@ -31,7 +31,7 @@ const Weather = () => {
   const search = async(city) => {
     if(city === '') return alert('Please enter a city name')
     try {
-      const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${af305dece548f8b3a8292ca559be8666}`
+      const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=af305dece548f8b3a8292ca559be8666`
       const res = await fetch(url)
       const data = await res.json();
       if(!res.ok){
